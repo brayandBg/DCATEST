@@ -23,8 +23,8 @@ public class ProveedorRestController {
 
     }
 
-    @PostMapping("/buscar")
-    public Proveedor finById(@RequestAttribute Long id){
+    @GetMapping("/buscar/{id}")
+    public Proveedor finById(@PathVariable Long id){
         return proveSer.findById(id);
     }
 

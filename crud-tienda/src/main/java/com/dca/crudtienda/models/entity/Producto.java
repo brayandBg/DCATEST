@@ -15,6 +15,15 @@ public class Producto implements Serializable {
     private String name;
     private String descpri;
     private double precio;
+    private String unidad;
+
+    public String getUnidad() {
+        return unidad;
+    }
+
+    public void setUnidad(String unidad) {
+        this.unidad = unidad;
+    }
 
     public long getId() {
         return id;
